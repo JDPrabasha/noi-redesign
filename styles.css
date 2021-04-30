@@ -1,0 +1,254 @@
+/* Colors */
+
+:root {
+  --black: #141313;
+  --footer-black: #111111;
+  --gold: #d0a85c;
+  --cyan: #4799a8;
+  --gray: #595959;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "Beaufort";
+  src: url(/fonts/beaufort-heavy-italic.otf);
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  src: url(/fonts/roboto-light.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url(/fonts/roboto-medium.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Medium Italic";
+  src: url(/fonts/roboto-medium-italic.ttf);
+}
+
+@font-face {
+  font-family: "Mark Pro Heavy";
+  src: url(/fonts/mark-pro-heavy.ttf);
+}
+
+/* Selectors */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Light";
+}
+
+.nav-list {
+  background-color: var(--black);
+  margin: 0;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 7;
+}
+
+.nav-item {
+  font-family: "Mark Pro Heavy";
+  font-size: 12px;
+  text-transform: uppercase;
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item:first-child {
+  margin-left: 100px;
+}
+
+.nav-item:nth-child(9) {
+  margin-left: auto;
+}
+
+.nav-item:last-child {
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+.btn-primary {
+  font-family: "Mark Pro Heavy";
+  font-size: 12px;
+  background-color: var(--cyan);
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.img-container {
+  background-image: url(images/hero.png);
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  /* filter: blur(8px);
+  -webkit-filter: blur(12px); */
+}
+
+.inner-container {
+  position: absolute;
+  text-align: center;
+  display: block;
+  left: 25%;
+  right: 25%;
+  top: 10%;
+}
+
+.btn-secondary {
+  font-family: "Mark Pro Heavy";
+  font-size: 12px;
+  background-color: var(--gold);
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+}
+
+.intro {
+  text-align: center;
+  background-color: var(--black);
+  color: white;
+  padding: 100px 400px;
+  text-align: center;
+  height: 600px;
+  box-sizing: border-box;
+}
+
+.section h1 {
+  font-family: "Beaufort";
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: normal;
+  margin: 0 auto 40px;
+}
+
+.section h3 {
+  font-family: "Roboto Medium Italic";
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 40px auto -10px;
+}
+
+.global {
+  text-align: center;
+  padding: 100px 100px;
+  height: 600px;
+  box-sizing: border-box;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.info {
+  grid-column: 4/6;
+  margin: auto 50px;
+}
+
+.global .ioi {
+  position: absolute;
+  right: 55%;
+  top: 30%;
+}
+
+.delegation {
+  text-align: center;
+  background-color: var(--black);
+  color: white;
+  padding: 100px 100px;
+  text-align: center;
+  height: 600px;
+  box-sizing: border-box;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.delegation .fname {
+  position: absolute;
+  left: 85%;
+  top: 40%;
+  color: white;
+  font-family: "Roboto Medium";
+}
+
+.delegation .lname {
+  color: red;
+  position: absolute;
+  left: 83%;
+  top: 45%;
+  color: white;
+  font-family: "Roboto Light";
+}
+
+.title {
+  grid-column: 1/2;
+  position: absolute;
+  bottom: 0;
+}
+
+.main {
+  grid-column: 2/3;
+}
+
+.cta {
+  padding: 100px 100px;
+  text-align: center;
+  height: 600px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cta p {
+  margin: auto 80px;
+}
+
+.button {
+  margin: auto;
+}
+
+.btn.btn-secondary {
+  padding: 30px;
+  font-size: 20px;
+}
+
+.footer {
+  text-align: center;
+  padding: 100px 400px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: var(--black);
+  color: var(--gray);
+  font-family: "Roboto Medium";
+  font-size: 15px;
+}
+
+.socials {
+  text-align: center;
+}
+
+.socials ul {
+  list-style: none;
+  display: flex;
+  margin: 20px 200px;
+}
+
+.socials li {
+  margin-right: 30px;
+}
