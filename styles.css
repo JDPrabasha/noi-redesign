@@ -171,7 +171,6 @@ body {
   background-color: var(--black);
   color: white;
   padding: 100px 100px;
-  text-align: center;
   height: 600px;
   box-sizing: border-box;
   position: relative;
@@ -188,7 +187,6 @@ body {
 }
 
 .delegation .lname {
-  color: red;
   position: absolute;
   left: 83%;
   top: 45%;
