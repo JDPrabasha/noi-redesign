@@ -22,17 +22,17 @@
 
 @font-face {
   font-family: "Roboto Medium";
-  src: url(/fonts/roboto-medium.ttf);
+  src: url(fonts/roboto-medium.ttf);
 }
 
 @font-face {
   font-family: "Roboto Medium Italic";
-  src: url(/fonts/roboto-medium-italic.ttf);
+  src: url(fonts/roboto-medium-italic.ttf);
 }
 
 @font-face {
   font-family: "Mark Pro Heavy";
-  src: url(/fonts/mark-pro-heavy.ttf);
+  src: url(../fonts/mark-pro-heavy.ttf);
 }
 
 /* Selectors */
